@@ -1,0 +1,13 @@
+n = 4000000
+a = 2
+b = 8
+sum = 0
+
+while a <= n:
+    sum += a
+    a, b = b, 4 * b + a
+
+print(sum)
+
+
+# This is basically a recurrence equation: En​=4En−1​+En−2​
